@@ -71,7 +71,8 @@ with employee_data as (
             "ATTRIBUTE9" :: VARCHAR(150),
             "ATTRIBUTE10" :: VARCHAR(150)
 
-    from {{ ref('exportEmp') }}
+    from {{ source('fivetran_SFTP_source','employee') }}
+
 )
 
 select * from employee_data
