@@ -2,6 +2,10 @@
 version: 2
 
 models:
+  - name: fivetran_SFTP_source
+    schema: sftp
+    tables: 
+      - name: employee
   - name: my_first_dbt_model
     description: "A starter dbt model"
     columns:
@@ -19,9 +23,4 @@ models:
         data_tests:
           - unique
           - not_null
-
-  - name: fivetran_SFTP_source
-    database: ftdb
-    schema: sftp
-    tables: 
-      - name: employee
+          
