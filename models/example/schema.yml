@@ -22,4 +22,5 @@ models:
 
   - name: fivetran_SFTP_source
     schema: sftp
-    tables: employee
+    tables: 
+      - name: employee
