@@ -21,6 +21,7 @@ models:
           - not_null
 
   - name: fivetran_SFTP_source
+    database: ftdb
     schema: sftp
     tables: 
       - name: employee
