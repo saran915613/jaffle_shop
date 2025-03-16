@@ -19,3 +19,11 @@ models:
         data_tests:
           - unique
           - not_null
+
+  - name: fivetran_SFTP_source
+    description: "read from sftp"
+    columns:
+      - schema: sftp
+        description: "read from sftp schema tables employee"
+        tables:
+          - name: employee
