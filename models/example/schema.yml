@@ -21,7 +21,5 @@ models:
           - not_null
 
   - name: fivetran_SFTP_source
-    description: "read from sftp schema tables employee"
     schema: sftp
-      tables:
-        - name: employee
+    tables: employee
